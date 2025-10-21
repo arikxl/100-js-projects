@@ -1,0 +1,54 @@
+@import url('https://fonts.cdnfonts.com/css/cowboy-outlaw');
+
+body{
+    margin: 0;
+    background-image: url('https://vistapointe.net/images/wild-west-4.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+header{
+    height: 10vh;
+    background-color: rgba(255,255,255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+    color: rgb(58, 29, 8);
+    font-family: 'Cowboy Outlaw', sans-serif;   
+    font-size: 40px;
+}
+
+
+main{
+    height: 85vh;
+    cursor: url('target.svg') , auto;
+    position: relative;
+}
+
+footer{
+    height: 5vh;
+    background-color: rgb(78, 37, 4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+p{
+    font-size: 32px;
+}
+
+
+#enemy{
+    background-image: url('https://png.pngtree.com/png-vector/20241109/ourmid/pngtree-outlaw-skull-with-cowboy-hat-and-red-bandana-png-image_14332135.png');
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    filter: drop-shadow(4px 4px 10px white);
+    position: absolute;
+}
