@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: sans-serif;
+        }
+
+        .ball {
+            background-image: url('crystal-ball.png');
+            width: 600px;
+            height: 600px;
+            background-size: cover;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text {
+            /* background-color: red; */
+            width: 33%;
+            /* aspect-ratio: 1; */
+            text-align: center;
+            margin-top: 30px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .text:hover{
+            filter: drop-shadow(0 0 20px yellow);
+        }
+
+        p {
+            font-size: 38px;
+        }
+
+        h1{
+            color:white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ask a question and click on the crystal ball</h1>
+    <div class="ball">
+        <div class="text" onclick="chooseAnswer()">
+            <p id="answerP"></p>
+        </div>
+    </div>
+
+
+    <script>
+        const answerP = document.getElementById('answerP');
+
+        const answers = ['בטוח שכן', 'בוודאי', 'כמובן', 'כן כן כן ושוב כן', 'אם תרצה, זה יקרה', 'ממש לא', 'לא בטוח', 'כדאי שתישן על זה ותתעורר עם התשובה']
+
+
+        function chooseAnswer() {
+            const randomNumber = ~~(Math.random() * answers.length)  ;
+            console.log(randomNumber)
+            console.log(answers[randomNumber])
+            const finalAnswer= answers[randomNumber];
+            answerP.innerHTML = finalAnswer;
+        };
+
+
+    </script>
+</body>
+
+</html>
