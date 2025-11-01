@@ -1,0 +1,78 @@
+body{
+    font-family: sans-serif;
+    background-image: url('https://s3u.tmimgcdn.com/u37752224/10de8c72f2a68605cdb8af4083906c09.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-y: hidden;
+    margin-top: -200px;
+}
+
+.radio{
+    border: solid;    
+
+    width: 400px;
+    margin: 20% auto;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+input, button{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.station-list-div{
+
+    max-height: 300px;
+    overflow-y: auto;
+    /* background-color: rgb(240, 235, 235); */
+    border-radius: 5px;
+    margin: 20px;
+
+}
+
+#stationList{
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-bottom: 1px solid silver;
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+li:hover{
+    background-color: rgb(231, 229, 229);
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px lightgray;
+    object-fit: cover;
+}
+
+span{
+    font-weight: bold;
+}
+
+#audioPlayer, stationTitle{
+    width: 90%;
+}

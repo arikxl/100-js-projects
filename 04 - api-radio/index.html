@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Radio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="radio">
+            <h1>My API Radio</h1>
+
+
+            <div>
+                <input type="text" id="radioInput"
+                 placeholder="What do you want to hear?">
+                <button onclick=" fetchStations()">GO!</button>
+            </div>
+
+
+            <div class="station-list-div">
+                <ul id="stationList"></ul>
+            </div>
+
+            <div class="player">
+                <p id="stationTitle">Choose a Station</p>
+                <audio id="audioPlayer" controls></audio>
+            </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
