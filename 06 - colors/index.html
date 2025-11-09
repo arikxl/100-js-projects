@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <label>Red</label>
+        <br />
+        <input oninput="changeColor()"
+         type="range" min="0" max="255" id="redInput" />
+        <br />
+
+        <label>Green</label>
+        <br />
+        <input oninput="changeColor()"
+        type="range" min="0" max="255" id="greenInput" />
+        <br />
+
+        <label>Blue</label>
+        <br />
+        <input oninput="changeColor()"
+        type="range" min="0" max="255" id="blueInput" />
+        <br />
+
+        <p id="colorP"></p>
+
+        <button onclick="randomColor()">Random Color</button>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

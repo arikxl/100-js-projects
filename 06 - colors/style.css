@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    /* background-color: aquamarine; */
+    transition: 0.5s;
+}
+
+
+.game{
+    /* border: solid lightgray 1px; */
+    width: 400px;
+    margin: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+input{
+    width: 80%;
+    margin-bottom: 40px;
+    accent-color: green;
+    cursor: pointer;
+}
+
+input:first-of-type{
+    accent-color: red;
+}
+input:last-of-type{
+    accent-color: blue;
+}
+
+button{
+    padding: 5px 20px ;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+        width: 80%;
+}
