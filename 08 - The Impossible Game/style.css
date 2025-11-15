@@ -1,0 +1,59 @@
+@import url('https://fonts.cdnfonts.com/css/rubber-biscuit');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('https://images3.alphacoders.com/138/1381481.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    height: 10vh;
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Rubber Biscuit', sans-serif;
+    font-size: 60px;
+    color: rgb(25, 109, 138);
+    text-shadow: 0 0 20px lime;
+}
+
+main{
+    height: 85vh;
+    position: relative;
+}
+
+#coin{
+    /* background-color: black; */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('https://purepng.com/public/uploads/thumbnail//one-v-buck-90b.png');
+    background-size: cover;
+    filter: drop-shadow(0 0 10px black);
+    position: absolute;
+}
+
+footer{
+    background-color:rgb(25, 109, 138) ;
+    height: 5vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
