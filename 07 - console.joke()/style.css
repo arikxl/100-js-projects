@@ -1,0 +1,35 @@
+
+body{
+background: #f0ed3c;
+    background: radial-gradient(circle, rgba(240, 237, 60, 1) 0%, rgba(173, 67, 222, 1) 100%);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.game{
+    /* min-height: 400px; */
+    width: 400px;
+    background-color: black;
+    margin:150px auto;
+    border-radius: 20px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    font-size: 100px;
+    cursor: pointer;
+    margin: 0;
+}
+
+h2{
+    font-weight: normal;
+}
+
+#translateH2{
+    direction: rtl;
+}
