@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, #46cffc 100%);
+}
+
+.game{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,  button{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    border: solid 2px #46cffc;
+}
+
+
+button{
+    background-color: #46cffc;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #3F5EFB;
+    border: solid 2px #3F5EFB;
+}
+
+
+#msg{
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.left{
+    text-align: left;
+}
