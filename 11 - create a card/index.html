@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="left">
+
+        <h1>Create your Card</h1>
+
+        <div class="flex">
+            <input type="text" id="cardNameInput" placeholder="Choose a name" oninput="changeName()" />
+
+            <button onclick="getRandomName()">
+                Random Name
+            </button>
+        </div>
+
+        <hr />
+
+        <div class="flex type">
+            <button onclick="changeCardType('Robot')">Robot</button>
+            <button onclick="changeCardType('Cat')">Cat</button>
+            <button onclick="changeCardType('Monster')">Monster</button>
+        </div>
+
+        <hr />
+
+        <div class="flex">
+            <div class="statDiv">
+                <label>Att</label>
+                <input id="attInput" oninput="changeStats('att')" type="range" min="1" max="10" value="5" />
+            </div>
+
+            <div class="statDiv">
+                <label>Life</label>
+                <input type="number" min="1" max="5" id="lifeInput" value="3" oninput="changeLife() " />
+            </div>
+
+            <div class="statDiv">
+                <label>Def</label>
+                <input id="defInput" oninput="changeStats('def')" type="range" min="1" max="10" value="5" />
+            </div>
+
+        </div>
+
+        <hr />
+
+        <div class="flex icons">
+            <button onclick="changeIcon('❤️')">❤️</button>
+            <button onclick="changeIcon('🖤')">🖤</button>
+            <button onclick="changeIcon('🤍')">🤍</button>
+            <button onclick="changeIcon('❤️‍🩹')">❤️‍🩹</button>
+            <button onclick="changeIcon('❤️‍🔥')">❤️‍🔥</button>
+            <button onclick="changeIcon('💔')">💔</button>
+            <button onclick="changeIcon('🤖')">🤖</button>
+            <button onclick="changeIcon('👹')">👹</button>
+            <button onclick="changeIcon('💀')">💀</button>
+            <button onclick="changeIcon('😸')">😸</button>
+            <button onclick="changeIcon('😼')">😼</button>
+        </div>
+
+        <hr />
+
+        <div class="fonts">
+            <button class="font1" onclick="changeFont(`'Fascinate', system-ui`)">Font1</button>
+            <button class="font2" onclick="changeFont(`'Asimovian', sans-serif`)">Font2</button>
+            <button class="font3" onclick="changeFont(`'Rubik Glitch', system-ui`)">Font3</button>
+            <button class="font4" onclick="changeFont(`'Fontdiner Swanky', serif`)">Font4</button>
+            <button class="font5" onclick="changeFont(`'Delius', cursive`)">Font5</button>
+        </div>
+
+        <hr />
+
+        <div class="flex colors">
+            <div>
+
+                <label>Border</label>
+                <input type="color"  value="#abc444" id="borderInput"
+                    oninput="changeBorderColor()"
+                />
+            </div>
+            <div>
+                <input type="color" id="colorInput" value="#FFFFFF"
+                    oninput="changeCardColor()"
+                />
+                <label>color</label>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="flex bgs">
+            <button class="bg1" onclick="changeBG('bg1')"></button>
+            <button class="bg2" onclick="changeBG('bg2')"></button>
+            <button class="bg3" onclick="changeBG('bg3')"></button>
+            <button class="bg4" onclick="changeBG('bg4')"></button>
+            <button class="bg5" onclick="changeBG('bg5')"></button>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="right">
+        <figure id="card">
+            <h2 id="cardNameH2">arikxl</h2>
+            <h3 id="cardTypeH3">Robot</h3>
+
+            <div class="flex stats">
+                <p>⚔️ <span id="attSpan">5</span> </p>
+                <p> <span id="defSpan">5</span> 🛡️</p>
+            </div>
+
+            <p id="lifeP">❤️❤️❤️</p>
+
+            <img alt="card-img" src="https://robohash.org/arikxl.png?set=set1"
+            id="cardImg"/>
+
+        </figure>
+    </div>
+
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
