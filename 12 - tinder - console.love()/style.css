@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+    background: #fd267a;
+    background: linear-gradient(45deg, #fd267a 0%, #ff6036 100%);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+h1{
+    margin: 40px;
+    color: white;
+}
+
+
+
+.game{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+figure{
+    /* border: solid; */
+    width: 360px;
+    height: 600px;
+    border-radius: 30px;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0 0 10px gray);
+}
+
+button{
+    font-size: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+}
+
+.move-left{
+    animation: moveLeft 0.8s ease-out forwards;
+}
+
+@keyframes moveLeft {
+    to{
+        transform: translate(-150%, 150px) rotate(-20deg);
+        opacity: 0;
+    }
+}
+
+.move-right {
+    animation: moveRight 0.8s ease-out forwards;
+}
+@keyframes moveRight {
+    to {
+        transform: translate(150%, 150px) rotate(20deg);
+        opacity: 0;
+    }
+}
+
+.hidden{
+    opacity: 0;
+}
+
+#msg{
+    width: 80%;
+    aspect-ratio: 2/1;
+    
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+        filter: drop-shadow(0 0 30px white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 100px;
+    display: none;
+
+    background:
+            radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187, 0, 51, 0) 27%),
+            radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187, 0, 51, 0) 27%),
+            radial-gradient(circle closest-side at 42% 22%, #d35 43%, rgba(221, 51, 85, 0) 45%),
+            radial-gradient(circle closest-side at 58% 22%, #d35 43%, rgba(221, 51, 85, 0) 45%),
+            radial-gradient(circle closest-side at 50% 35%, #d35 32%, rgba(221, 51, 85, 0) 27%),
+    
+            radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187, 0, 51, 0) 27%) 50px 50px,
+            radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187, 0, 51, 0) 27%) 50px 50px,
+            radial-gradient(circle closest-side at 40% 22%, #d35 40%, rgba(221, 51, 85, 0) 45%) 52px 50px,
+            radial-gradient(circle closest-side at 60% 22%, #d35 40%, rgba(221, 51, 85, 0) 45%) 48px 50px,
+            radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221, 51, 85, 0) 37%) 50px 50px;
+        background-color: #b03;
+        background-size: 100px 100px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console.Love()</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🔥Console.Love()🔥</h1>
+    <label>I am looking for a</label>
+    <select id="genderSelect" onchange="chooseGender()">
+        <option value="female">Lady</option>
+        <option value="male">Gentleman</option>
+    </select>
+
+    <div class="game">
+        <button onclick="swipeLeft()">⬅️✖️</button>
+        <figure id="profile">
+            <div class="info">
+                <h2>
+                    <span id="nameSpan">Name</span>
+                    <span id="ageSpan">50</span>
+                </h2>
+                <h3 id="cityH3">Beer Sheva</h3>
+            </div>
+        </figure>
+        <button onclick="swipeRight()">💗➡️</button>
+    </div>
+
+    <section id="msg" onclick="closeMsg()">You Got a Match</section>
+
+
+    <script src="arrays.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
