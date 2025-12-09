@@ -15,7 +15,7 @@ function chooseGender() {
 
 
 
-const MY_API_KEY = 'YOUR API KEY';
+const MY_API_KEY = 'YOUR API HERE';
 const BASE_URL = 'https://api.pexels.com/v1/';
 
 
@@ -72,6 +72,7 @@ fetchImage()
 function changeData() {
 
     ageSpan.innerHTML = ~~(Math.random() * 30 + 20);
+
 
     let randomCityIndex = ~~(Math.random() * israeliLocations.length);
     cityH3.innerHTML = israeliLocations[randomCityIndex];

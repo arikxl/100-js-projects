@@ -43,6 +43,7 @@ figure{
     background-size: cover;
     background-position: center;
     filter: drop-shadow(0 0 10px gray);
+    z-index: -10;
 }
 
 button{
